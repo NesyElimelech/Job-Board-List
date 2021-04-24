@@ -8,11 +8,8 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -33,14 +30,11 @@ Users should be able to:
 - Solution URL: [https://github.com/NesyElimelech/Job-Board-List](https://github.com/NesyElimelech/Job-Board-List)
 - Live Site URL: [https://job-board-list.vercel.app/](https://job-board-list.vercel.app/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [TailwindCSS](https://tailwindcss.com/) - For styles
@@ -113,7 +107,3 @@ const proudOfThisFunc = () => {
 ## Author
 
 - Frontend Mentor - [@NesyElimelech](https://www.frontendmentor.io/profile/NesyElimelech)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
