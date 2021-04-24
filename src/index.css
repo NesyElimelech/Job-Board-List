@@ -1,13 +1,119 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+:root {
+  --primary: #5ba4a4;
+  --secondary: #7b8e8e;
+  --bgColor: #effafa;
+  --filterTable: #eef6f6;
+  --dark: #2c3a3a;
+  --black: #242424;
+  --shadow: #5ba4a42c;
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+  font-weight: 500;
+}
+body {
+  background-color: var(--bgColor);
+  font-family: 'Spartan', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.board {
+  box-shadow: 8px 10px 10px var(--shadow);
+}
+.featured {
+  border-left: 5px solid var(--primary);
+}
+
+.banner {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  background-color: var(--primary);
+}
+
+h3 {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.newLabel {
+  background-color: var(--primary);
+}
+
+.tag {
+  color: var(--primary);
+  font-weight: 700;
+  background-color: var(--bgColor);
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.clear {
+  color: var(--primary);
+  outline: transparent;
+  cursor: pointer;
+}
+
+.clear:hover,
+.clear:focus {
+  border-bottom: 1px solid var(--primary);
+  outline: transparent;
+}
+
+.tags {
+  color: var(--primary);
+  font-weight: 700;
+  background-color: var(--bgColor);
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+.tags:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: white;
+}
+
+.remove {
+  background-color: var(--primary);
+  padding: 0.1rem 0.75rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background-color: var(--dark);
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 10px;
+  }
+  .board {
+    margin-bottom: 6em;
+    padding: 4rem;
+  }
+  .leftSide {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
 }
