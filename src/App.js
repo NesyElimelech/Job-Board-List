@@ -33,16 +33,18 @@ function App() {
     setFilters(filters.filter((f) => f !== filter));
   };
 
-  const width = window.innerWidth;
   const [bgImage, setBgImage] = useState('/images/bg-header-desktop.svg');
   useEffect(() => {
     // Fetching the data from the data.json file
     setJobs(data);
     // Check if the screen size is for desktop or mobile and change the background image accordingly
-    width > 640
-      ? setBgImage('/images/bg-header-desktop.svg')
-      : setBgImage('/images/bg-header-mobile.svg');
-  }, [width]);
+
+    window.addEventListener('resize', () => {
+      window.innerWidth >= 840
+        ? setBgImage('/images/bg-header-desktop.svg')
+        : setBgImage('/images/bg-header-mobile.svg');
+    });
+  }, []);
   return (
     <>
       <header className="banner mb-28 md:mb-16 ">
